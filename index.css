@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  /* background-color: #24273d; */
+}
+
+.footer a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Bree Serif";
+  color: white;
+}
+body {
+  margin: 0;
+}
+
+.todo-app-main-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(360deg,
+  #0C1A1A 10%,
+      transparent 25%,
+      transparent 100%),
+    url("banner1.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-app-main-container-lg {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(360deg,
+      rgb(206, 202, 202) 10%,
+      transparent 25%,
+      transparent 100%),
+    url("photo-1506104489822-562ca25152fe.avif");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-app-sub-container {
+  height: 85%;
+  width: 40%;
+  margin-bottom: 20px;
+  
+}
+
+.heading-themeIcon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: 100%;
+}
+
+.todo-heading {
+  color: white;
+  font-family: "Sofia";
+}
+
+.icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo-container {
+  background-color: #24273d;
+  height: 90%;
+  width: 100%;
+  border-radius: 20px;
+  
+}
+
+.input-container {
+  height: 10%;
+  box-shadow: 0.3px 1px 1px 0px #1e1e1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-sub-container {
+  width: 95%;
+  height: 70%;
+  background-color: transparent;
+  border-radius: 40px;
+  display: flex;
+  border: 0.1ex solid #4f5668;
+  /*border: 0.1ex solid #93ccff;
+  */padding: 0px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.input {
+  width: 78%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgb(205, 201, 201);
+  padding-left: 10px;
+}
+
+.input-lg {
+  width: 78%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.add-todo-button {
+  width: 22%;
+  height: 100%;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #00a86b;
+  color: white;
+  outline: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.add-todo-button-lg {
+  background-color: #4f5668;
+  color: white;
+}
+
+.add-todo-button:hover {
+  background-color: #00a86b;
+}
+
+.add-todo-button-lg:hover {
+  background-color: #414654;
+}
+
+.todo-sub-container {
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.empty-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cactus {
+  height: 50%;
+}
+
+.empty-line {
+  font-family: "Sofia";
+  color: rgb(237, 234, 234);
+}
+
+.todo-list-container {
+  height: auto;
+  overflow: scroll;
+  width: 100%;
+  padding: 0px;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-item-div {
+  width: 95%;
+  height: 40px;
+  border: 0.1ex solid #4f5668;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-item-div-lg {
+  width: 95%;
+  height: 40px;
+  border: 0.1ex solid #4f5668;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-item-div:hover {
+  background-color: rgb(94, 91, 91);
+}
+
+.todo-item-div-lg:hover {
+  background-color: rgb(206, 202, 202);
+}
+
+.checkbox {
+  appearance: none;
+  height: 19px;
+  width: 19px;
+  margin: 0px 15px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 5px;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #466969;
+  border: 1px solid rgb(26, 25, 25);
+}
+
+.checkbox::before {
+  content: "\2713";
+  /* Unicode checkmark character */
+  font-size: 14px;
+  /* Adjust as needed */
+  color: black;
+  /* Checkmark color */
+  position: absolute;
+  left: 50%;
+  /* Adjust to center horizontally */
+  top: 50%;
+  /* Adjust to center vertically */
+  transform: translate(-50%, -50%);
+  /* Center the checkmark */
+  display: none;
+  /* Hide by default */
+}
+
+/* Show the checkmark when the checkbox is checked */
+.checkbox:checked::before {
+  display: block;
+}
+
+.todoItem {
+  color: rgb(208, 205, 205);
+  font-family: "Lucida Sans Unicode";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.todoItem-lg {
+  color: rgb(40, 39, 39);
+  font-family: "Lucida Sans Unicode";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.removeIcon {
+  height: 19px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.removeIcon-lg {
+  height: 19px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #24273d;
+  font-family: "Roboto";
+}
+
+.todo-item-div:hover .removeIcon {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.input-border-change {
+  border: 1px solid #00a86b;
+}
+
+.text-decoration {
+  text-decoration: line-through;
+  color: #afb2b7;
+}
+
+.text-decoration-lg {
+  text-decoration: line-through;
+  color: #7a7c7e;
+}
+
+@media(max-width: 990px) {
+  .todo-app-sub-container {
+    width: 83%;
+    height: 75%;
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer a {
+    font-size: 10px;
+  }
+
+  .footer span {
+    font-size: 10px;
+  }
+
+  .todo-heading {
+    font-size: 30px;
+  }
+}

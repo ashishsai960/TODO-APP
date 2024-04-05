@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<bds />
+		<link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Sofia" />
+		<title>Todo</title>
+	</head>
+	<body>
+		<!-- Place below is for your own exciting code -->
+
+		<div id="todo-app-main-container" class="todo-app-main-container">
+			<div class="todo-app-sub-container">
+				<div class="heading-themeIcon-container">
+					<h1 class="todo-heading">TODO</h1>
+					<button class="icon">
+						<img
+							id="icon-image"
+							src="light-mode.svg"
+							alt="dark-mode" />
+					</button>
+				</div>
+				<div id="todo-container" class="todo-container">
+					<div class="input-container">
+						<div id="input-border" class="input-sub-container">
+							<input
+								type="text"
+								placeholder="Create a new todo..."
+								class="input"
+								id="input" />
+							<button
+								onClick="getInputValue()"
+								id="add-todo"
+								class="add-todo-button">
+								Add Todo
+							</button>
+						</div>
+					</div>
+					<div class="todo-sub-container">
+						<div id="empty-view" class="empty-container">
+							<img
+								alt="cactus"
+								class="cactus"
+								src="https://cdni.iconscout.com/illustration/premium/thumb/web-development-5641489-4711160.png?f=webp" />
+							<h1 id="empty-line" class="empty-line">
+								There are no todo's....
+							</h1>
+						</div>
+						<ul id="todo-list" class="todo-list-container"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Change the [ME] part to your own name/GitHub link -->
+		<div class="footer">
+			<a
+				href="https://ashishsai960.github.io/Portfolio/"
+				target="_blank"
+				rel="noopener noreferrer"
+				>Project by Ashish sai Naik</a
+			>
+		</div>
+		<script src="index.js" defer></script>
+	</body>
+</html>
